@@ -12,8 +12,8 @@ export default function Title(props : {
             {props.listItems.map((item :{
                 title: string,
                 subtitle?: string
-            }) =>
-                <div className={styles.item}>
+            }, i) =>
+                <div key={i} className={styles.item}>
                     <div className={styles.itemTitle}>{item.title}</div>
                     <div className={styles.itemSubtitle}>{item.subtitle}</div>
                 </div>

@@ -64,8 +64,8 @@ export default function Menu() {
                 className={styles.logo}
             />
             <div className={styles.linkSection}>
-                {menuItems.map(item => 
-                    <a href={item.link} className={[styles.menuItem, smallMenu ? styles.primaryColor : ''].join(' ')}>{item.text}</a>
+                {menuItems.map((item, i) => 
+                    <a key={i} href={item.link} className={[styles.menuItem, smallMenu ? styles.primaryColor : ''].join(' ')}>{item.text}</a>
                 )}
             </div>
             <div className={styles.mobileMenu}>
@@ -78,8 +78,8 @@ export default function Menu() {
                 </div>
             </div>
             <div className={[styles.mobileLinkSection, showMobileMenu ? styles.activeMobile : styles.hiddenMobile].join(' ')}>
-                {menuItems.map(item =>
-                    <a href={item.link} className={styles.menuItem}>{item.text}</a>
+                {menuItems.map((item, i) =>
+                    <a key={i} href={item.link} className={styles.menuItem}>{item.text}</a>
                 )}
             </div>
         </nav>

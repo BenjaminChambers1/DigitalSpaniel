@@ -30,8 +30,9 @@ export default function ProjectTiles() {
             <div className={styles.tabs}>
                 {tabs.map((tab, i) => 
                     <div
-                        onClick={() => setTabIndex(i)}
                         className={styles.tab}
+                        key={i}
+                        onClick={() => setTabIndex(i)}
                     >
                         <div className={tabIndex === i ? styles.active: ''}>
                             {tab.option}
