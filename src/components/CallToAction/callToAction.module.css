@@ -1,37 +1,37 @@
 .callToAction {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .content {
-    color: #506473;
-    line-height: 1.5rem;
-    padding-bottom: 2rem;
-    min-height: 9rem
+	color: #506473;
+	line-height: 1.5rem;
+	padding-bottom: 2rem;
+	min-height: 9rem;
 }
 
 .actionText {
-    width: fit-content;
-    position: relative;
-    cursor: pointer;
+	width: fit-content;
+	position: relative;
+	cursor: pointer;
 }
 
 .actionText::after {
-    background-color: #C0345E;
-    bottom: -0.25rem;
-    content: '';
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    left: 0;
+	background-color: #c0345e;
+	bottom: -0.25rem;
+	content: '';
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	left: 0;
 }
 
 .actionText:hover::after {
-    background-color: #19293A;
+	background-color: #19293a;
 }
 
 @media (max-width: 800px) {
-    .whiteTextOnMobile {
-        color: white;
-    }
+	.whiteTextOnMobile {
+		color: white;
+	}
 }
